@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Luck Travels - 7 Seater Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Raghavendra Travels 🚗</h1>
+        <h3>Book Our 7-Seater for Your Trip</h3>
+
+        <form id="bookingForm">
+            <input type="text" id="name" placeholder="Full Name" required>
+            <input type="tel" id="phone" placeholder="Phone Number" required>
+            <input type="text" id="drop" placeholder="Your Destinations" required>
+            
+            <input type="date" id="date" required>
+            <input type="number" id="persons" placeholder="Number of Persons" min="1" 
+            max="7" required>
+
+            <textarea id="message" placeholder="Additional Message"></textarea>
+
+            <button type="submit">Book Now</button>
+        </form>
+
+        <p id="status"></p>
+    </div>
+
+    <!-- EmailJS -->
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
