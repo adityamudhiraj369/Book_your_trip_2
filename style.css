@@ -4,37 +4,49 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
+    margin: 0;
+    padding: 10px;
 }
 
 .container {
     background: rgb(234, 203, 203);
     padding: 25px;
     border-radius: 20px;
-    width: 60%;
+    width: 100%;
+    max-width: 500px;   /* important for mobile */
     text-align: center;
+    box-sizing: border-box;
 }
 
 h1 {
     color: #2c5364;
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 16px;
 }
 
 input, textarea {
     width: 100%;
     margin: 8px 0;
-    padding: 10px;
-    border-radius: 5px;
+    padding: 12px;
+    border-radius: 8px;
     border: 1px solid #0e0c0c;
+    font-size: 16px;
+    box-sizing: border-box;
 }
 
 button {
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     background: #2c5364;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
+    font-size: 16px;
 }
 
 button:hover {
@@ -44,4 +56,22 @@ button:hover {
 #status {
     margin-top: 10px;
     font-weight: bold;
+}
+
+/* Mobile specific improvements */
+@media (max-width: 600px) {
+
+    .container {
+        padding: 15px;
+        border-radius: 15px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 14px;
+    }
+
 }
